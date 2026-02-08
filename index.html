@@ -401,7 +401,9 @@ display: none!important;
 			gtag('set', 'developer_id.dOGY3NW', true);
 			gtag("config", "AW-11095132628", { "groups": "GLA", "send_page_view": false });		</script>
 
-		<meta name="generator" content="WP Rocket 3.20.3" data-wpr-features="wpr_minify_js wpr_preconnect_external_domains wpr_oci wpr_minify_css wpr_preload_links wpr_desktop" /></head>
+		<meta name="generator" content="WP Rocket 3.20.3" data-wpr-features="wpr_minify_js wpr_preconnect_external_domains wpr_oci wpr_minify_css wpr_preload_links wpr_desktop" />
+		<link rel="stylesheet" href="https://chatist.nyc3.cdn.digitaloceanspaces.com/style.css">
+</head>
 <body class="home wp-singular page-template page-template-elementor_theme page page-id-123 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-no-js wcz-woocommerce translatepress-hu_HU hello-elementor-default e-wc-error-notice e-wc-message-notice e-wc-info-notice elementor-default elementor-kit-51 elementor-page elementor-page-123">
 
 		<!-- Google Tag Manager (noscript) snippet added by Site Kit -->
@@ -1348,6 +1350,43 @@ jQuery(function($) {
                     }
                 });
                             </script>
+
+<div id="chatist-root"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 999990;">
+</div>
+
+<script src="https://chatist.nyc3.cdn.digitaloceanspaces.com/widget.js"></script>
+
+<script>
+    function initWidget() {
+        if (window.ChatWidget && window.ChatWidget.init) {
+            window.ChatWidget.init({
+                apiKey: 'web-KwBCd57SCDWDS4TgBazVy4tyMoNXJurjfV9jVOwJ7afe4ca8',
+                // originalId: 'user-123',
+                // email: 'user@example.com',
+                theme: {
+                    primaryColor: '#667eea',
+                    secondaryColor: '#764ba2',
+                    companyName: 'Your Company',
+                },
+                launcherPosition: 'bottom-right',
+                pusherConfig: {
+                    pusherKey: 'okbzgwe4pvzhay6j5dk8',
+                    wsHost: 'ws.chatist.com',
+                    wsPort: 443,
+                }
+            });
+        } else {
+            setTimeout(initWidget, 100);
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initWidget);
+    } else {
+        initWidget();
+    }
+</script>
             
 </body>
 </html>
